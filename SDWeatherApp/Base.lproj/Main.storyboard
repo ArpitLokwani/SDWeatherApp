@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ybq-mm-ogf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="SDWeatherApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,6 +23,82 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="41" y="114"/>
+        </scene>
+        <!--Board View Controller-->
+        <scene sceneID="isC-88-B3O">
+            <objects>
+                <viewController restorationIdentifier="BoardViewController" storyboardIdentifier="BoardViewController" id="mtI-xt-BlX" customClass="BoardViewController" customModule="SDWeatherApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MYA-MO-xRc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ekd-cQ-yWO">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Shark Dreams" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TfZ-nq-p3s">
+                                <rect key="frame" x="59" y="425" width="277" height="137"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="39"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Weather App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6o-Ue-CaD">
+                                <rect key="frame" x="116" y="527" width="167" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="copyright@2018" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wpd-3A-1xE">
+                                <rect key="frame" x="0.0" y="619" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Wpd-3A-1xE" firstAttribute="leading" secondItem="QAl-we-y5J" secondAttribute="leading" id="7Z6-Qo-PCM"/>
+                            <constraint firstItem="QAl-we-y5J" firstAttribute="bottom" secondItem="Wpd-3A-1xE" secondAttribute="bottom" constant="27" id="99A-LX-VLi"/>
+                            <constraint firstItem="TfZ-nq-p3s" firstAttribute="top" secondItem="ekd-cQ-yWO" secondAttribute="bottom" constant="-242" id="AKA-nP-pSb"/>
+                            <constraint firstItem="TfZ-nq-p3s" firstAttribute="leading" secondItem="ekd-cQ-yWO" secondAttribute="trailing" constant="-316" id="Pam-bb-Acq"/>
+                            <constraint firstItem="N6o-Ue-CaD" firstAttribute="top" secondItem="ekd-cQ-yWO" secondAttribute="bottom" constant="-140" id="R8J-HW-MSn"/>
+                            <constraint firstItem="Wpd-3A-1xE" firstAttribute="trailing" secondItem="QAl-we-y5J" secondAttribute="trailing" id="WEH-YL-MWC"/>
+                            <constraint firstItem="ekd-cQ-yWO" firstAttribute="leading" secondItem="QAl-we-y5J" secondAttribute="leading" id="XiP-0I-X1A"/>
+                            <constraint firstItem="ekd-cQ-yWO" firstAttribute="trailing" secondItem="QAl-we-y5J" secondAttribute="trailing" id="YFq-ap-3k9"/>
+                            <constraint firstItem="ekd-cQ-yWO" firstAttribute="top" secondItem="MYA-MO-xRc" secondAttribute="top" id="iZS-ul-407"/>
+                            <constraint firstItem="ekd-cQ-yWO" firstAttribute="bottom" secondItem="QAl-we-y5J" secondAttribute="bottom" id="joe-LN-gGr"/>
+                            <constraint firstItem="N6o-Ue-CaD" firstAttribute="leading" secondItem="ekd-cQ-yWO" secondAttribute="trailing" constant="-259" id="p7Q-Sa-a8C"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QAl-we-y5J"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="XU4-GI-qQY"/>
+                    <connections>
+                        <outlet property="boardImageView" destination="ekd-cQ-yWO" id="wyc-bm-KFM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fuf-LW-qLs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1464.8" y="122.78860569715144"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Kui-oA-K0L">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Ybq-mm-ogf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sFF-dL-Mjy">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mtI-xt-BlX" kind="relationship" relationship="rootViewController" id="xOO-Ik-8UY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Ro-mh-tqH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="817.60000000000002" y="123.23838080959521"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="splash.jpg" width="543" height="821"/>
+    </resources>
 </document>
