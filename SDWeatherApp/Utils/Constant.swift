@@ -9,11 +9,12 @@
 import Foundation
 
 struct Constant {
+    
    static let appID = "7f71ef9cdcc2b2deb361116b6e13cf6a"
    static let clearSky = "clear sky"
    static let lightRain = "light rain"
    static let moderateRain = "moderate rain"
-   static let haze = "Haze"
+   static let haze = "haze"
    static let scatteredClouds = "scattered clouds"
    static let lightIntensityDrizzle = "light intensity drizzle"
    static let fewClouds = "few clouds"

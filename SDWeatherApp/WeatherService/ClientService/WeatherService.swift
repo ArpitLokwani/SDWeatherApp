@@ -21,7 +21,7 @@ class WeatherService: NSObject {
     
     //GET WEATHER REPORT
     func getWeatherReport(place:String,completetionHandler:@escaping boolDictionaryStringErrorBlock,errorHandler:errorBlock)  -> Void {
-        let bannerService = NSString(format: "%@",remoteServiceFact.cartServices())
+        let bannerService = NSString(format: "%@",remoteServiceFact.weatherServices())
        // logActivity(message: bannerService as String)
         let postParam :[String:String] = [
             "q" : place,

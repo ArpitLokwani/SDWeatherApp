@@ -11,7 +11,7 @@ import UIKit
 class ServerContextLocalHost: ServerContext {
     
     func domain() -> String {
-        return "https://10.99.12.81/searchtest"
+        return "https://api.openweathermap.org"
     }
     func api() -> String  {
         return "api/"

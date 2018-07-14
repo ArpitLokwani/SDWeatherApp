@@ -195,6 +195,7 @@
 		C8DD49F420F8CB1E008C308B /* SDWeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				C8DD4BC620FA1C4D008C308B /* Modal */,
 				C8DD4BA220F8EC53008C308B /* View */,
 				C8DD4BC420FA0B85008C308B /* Controller */,
 				C8DD4BC520FA0B97008C308B /* Resources */,
@@ -342,6 +343,13 @@
 				C8DD4B5120F8DF52008C308B /* funny.gif */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		C8DD4BC620FA1C4D008C308B /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
